@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -31,6 +31,42 @@
                 <p>Desarrollo web y aplicaciones a la medida para impulsar tu negocio</p>
                 <a href="#catalogo" class="btn-primary">Ver catálogo</a>
             </div>
+        </div>
+    </section>
+
+    <!-- Nuevo Banner de imágenes -->
+    <section class="image-banner">
+        <div class="banner-container">
+            <div class="banner-slides">
+                <div class="banner-slide active">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Desarrollo web profesional">
+                    <div class="banner-content">
+                        <h2>Desarrollo <span class="highlight-text">Profesional</span></h2>
+                        <p>Soluciones de alto nivel para empresas exigentes</p>
+                    </div>
+                </div>
+                <div class="banner-slide">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3" alt="Diseño web moderno">
+                    <div class="banner-content">
+                        <h2>Diseño <span class="highlight-text">Moderno</span></h2>
+                        <p>Interfaces atractivas y experiencias de usuario excepcionales</p>
+                    </div>
+                </div>
+                <div class="banner-slide">
+                    <img src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2" alt="Tecnología avanzada">
+                    <div class="banner-content">
+                        <h2>Tecnología <span class="highlight-text">Avanzada</span></h2>
+                        <p>Las últimas herramientas para un rendimiento óptimo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-dots">
+                <span class="banner-dot active" data-index="0"></span>
+                <span class="banner-dot" data-index="1"></span>
+                <span class="banner-dot" data-index="2"></span>
+            </div>
+            <button class="banner-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="banner-next"><i class="fas fa-chevron-right"></i></button>
         </div>
     </section>
 
@@ -78,155 +114,517 @@
             <div class="section-header">
                 <h2>Nuestro Catálogo</h2>
                 <p>Selecciona el paquete que mejor se adapte a tus necesidades</p>
+                <div class="glowing-badge">
+                    <span class="pulse"></span>
+                    <span class="text">Precios 2025</span>
+                </div>
             </div>
-            <div class="packages-grid">
-                <div class="package-card">
-                    <div class="package-header">
-                        <h3>Paquete Básico</h3>
+            
+            <!-- Nuevo catálogo detallado -->
+            <div class="catalog-container">
+                <!-- Elemento 1 -->
+                <div class="catalog-item">
+                    <div class="catalog-header">
+                        <div class="catalog-icon">
+                            <i class="fas fa-wordpress"></i>
+                        </div>
+                        <h3>Sitio Web WordPress Essential</h3>
+                        <div class="price-tag">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">500.000</span>
+                            <span class="price-period">COP</span>
+                        </div>
                     </div>
-                    <div class="package-price">
-                        <span class="currency">$</span>
-                        <span class="amount">499</span>
-                        <span class="period">USD</span>
-                    </div>
-                    <div class="package-features">
-                        <ul>
-                            <li><i class="fas fa-check"></i> Sitio web hasta 5 páginas</li>
-                            <li><i class="fas fa-check"></i> Diseño responsive</li>
-                            <li><i class="fas fa-check"></i> Formulario de contacto</li>
-                            <li><i class="fas fa-check"></i> Optimización SEO básica</li>
-                            <li><i class="fas fa-check"></i> 1 mes de soporte</li>
+                    <div class="catalog-description">
+                        <p class="tech-info">Desarrollado con WordPress + tema premium</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Diseño responsive adaptado a tu marca</li>
+                            <li><i class="fas fa-check-circle"></i> Hasta 5 secciones personalizadas</li>
+                            <li><i class="fas fa-check-circle"></i> Hosting y dominio incluidos por 6 meses</li>
+                            <li><i class="fas fa-check-circle"></i> Optimización SEO básica</li>
+                            <li><i class="fas fa-check-circle"></i> Integración con redes sociales</li>
+                            <li><i class="fas fa-check-circle"></i> Certificado SSL gratuito</li>
                         </ul>
+                        <div class="insight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Transforma tu negocio: Establece tu presencia online profesional en menos de 2 semanas. ¡El primer paso para digitalizar tu empresa!</p>
+                        </div>
                     </div>
-                    <button class="btn-package" data-package="Paquete Básico">Adquirir</button>
+                    <button class="btn-catalog shine-effect" data-package="Sitio Web WordPress Essential">Solicitar</button>
                 </div>
-                
-                <div class="package-card featured">
-                    <div class="badge">Popular</div>
-                    <div class="package-header">
-                        <h3>Paquete Profesional</h3>
+
+                <!-- Elemento 2 -->
+                <div class="catalog-item">
+                    <div class="catalog-header">
+                        <div class="catalog-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Sitio Web Corporativo Premium</h3>
+                        <div class="price-tag">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">950.000</span>
+                            <span class="price-period">COP</span>
+                        </div>
                     </div>
-                    <div class="package-price">
-                        <span class="currency">$</span>
-                        <span class="amount">899</span>
-                        <span class="period">USD</span>
-                    </div>
-                    <div class="package-features">
-                        <ul>
-                            <li><i class="fas fa-check"></i> Sitio web hasta 10 páginas</li>
-                            <li><i class="fas fa-check"></i> Diseño premium</li>
-                            <li><i class="fas fa-check"></i> Panel de administración</li>
-                            <li><i class="fas fa-check"></i> Optimización SEO avanzada</li>
-                            <li><i class="fas fa-check"></i> Integración con redes sociales</li>
-                            <li><i class="fas fa-check"></i> 3 meses de soporte</li>
+                    <div class="catalog-description">
+                        <p class="tech-info">Desarrollado con WordPress + Elementor Pro</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Diseño exclusivo y profesional</li>
+                            <li><i class="fas fa-check-circle"></i> Hasta 8 secciones personalizadas</li>
+                            <li><i class="fas fa-check-circle"></i> Blog integrado para estrategia de contenidos</li>
+                            <li><i class="fas fa-check-circle"></i> Formularios avanzados y chat en vivo</li>
+                            <li><i class="fas fa-check-circle"></i> Optimización SEO intermedia</li>
+                            <li><i class="fas fa-check-circle"></i> Integración con Google Analytics</li>
+                            <li><i class="fas fa-check-circle"></i> Hosting premium y dominio por 1 año</li>
                         </ul>
+                        <div class="insight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Destaca entre tu competencia: Proyecta una imagen corporativa sólida con funcionalidades que convierten visitantes en clientes.</p>
+                        </div>
                     </div>
-                    <button class="btn-package" data-package="Paquete Profesional">Adquirir</button>
+                    <button class="btn-catalog shine-effect" data-package="Sitio Web Corporativo Premium">Solicitar</button>
                 </div>
-                
-                <div class="package-card">
-                    <div class="package-header">
-                        <h3>Paquete Empresarial</h3>
+
+                <!-- Elemento 3 -->
+                <div class="catalog-item spotlight">
+                    <div class="ribbon">Popular</div>
+                    <div class="catalog-header">
+                        <div class="catalog-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-commerce Starter</h3>
+                        <div class="price-tag">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">1.200.000</span>
+                            <span class="price-period">COP</span>
+                        </div>
                     </div>
-                    <div class="package-price">
-                        <span class="currency">$</span>
-                        <span class="amount">1499</span>
-                        <span class="period">USD</span>
-                    </div>
-                    <div class="package-features">
-                        <ul>
-                            <li><i class="fas fa-check"></i> Sitio web ilimitado</li>
-                            <li><i class="fas fa-check"></i> Diseño personalizado</li>
-                            <li><i class="fas fa-check"></i> E-commerce completo</li>
-                            <li><i class="fas fa-check"></i> SEO completo</li>
-                            <li><i class="fas fa-check"></i> Análisis de tráfico</li>
-                            <li><i class="fas fa-check"></i> Sistema de reservas/citas</li>
-                            <li><i class="fas fa-check"></i> 6 meses de soporte premium</li>
+                    <div class="catalog-description">
+                        <p class="tech-info">Desarrollado con WordPress + WooCommerce</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Tienda online completa con hasta 50 productos</li>
+                            <li><i class="fas fa-check-circle"></i> Pasarela de pagos incluida (PayU, MercadoPago o Wompi)</li>
+                            <li><i class="fas fa-check-circle"></i> Diseño orientado a conversión</li>
+                            <li><i class="fas fa-check-circle"></i> Panel administrativo intuitivo</li>
+                            <li><i class="fas fa-check-circle"></i> Certificado de seguridad premium</li>
+                            <li><i class="fas fa-check-circle"></i> Capacitación para gestión de productos</li>
                         </ul>
+                        <div class="insight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Comienza a vender online: Solución completa para empezar a generar ingresos en internet de forma inmediata.</p>
+                        </div>
                     </div>
-                    <button class="btn-package" data-package="Paquete Empresarial">Adquirir</button>
+                    <button class="btn-catalog shine-effect" data-package="E-commerce Starter">Solicitar</button>
+                </div>
+
+                <!-- Elemento 4 -->
+                <div class="catalog-item">
+                    <div class="catalog-header">
+                        <div class="catalog-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Desarrollo Frontend Exclusivo</h3>
+                        <div class="price-tag">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">1.500.000</span>
+                            <span class="price-period">COP</span>
+                        </div>
+                    </div>
+                    <div class="catalog-description">
+                        <p class="tech-info">Desarrollado con HTML5, CSS3, JavaScript</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Diseño 100% a medida sin plantillas</li>
+                            <li><i class="fas fa-check-circle"></i> Interacciones y animaciones premium</li>
+                            <li><i class="fas fa-check-circle"></i> Hasta 10 páginas internas optimizadas</li>
+                            <li><i class="fas fa-check-circle"></i> Rendimiento de carga ultrarrápido</li>
+                            <li><i class="fas fa-check-circle"></i> Compatible con todos los dispositivos</li>
+                            <li><i class="fas fa-check-circle"></i> SEO técnico avanzado</li>
+                            <li><i class="fas fa-check-circle"></i> Integración con CMS headless</li>
+                        </ul>
+                        <div class="insight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Experiencia única: Diseño exclusivo que reflejará perfectamente la esencia de tu marca con máximo rendimiento.</p>
+                        </div>
+                    </div>
+                    <button class="btn-catalog shine-effect" data-package="Desarrollo Frontend Exclusivo">Solicitar</button>
+                </div>
+
+                <!-- Elemento 5 -->
+                <div class="catalog-item">
+                    <div class="catalog-header">
+                        <div class="catalog-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>E-commerce Professional</h3>
+                        <div class="price-tag">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">2.300.000</span>
+                            <span class="price-period">COP</span>
+                        </div>
+                    </div>
+                    <div class="catalog-description">
+                        <p class="tech-info">Desarrollado con PHP, Laravel, MySQL</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Desarrollo personalizado sin plantillas</li>
+                            <li><i class="fas fa-check-circle"></i> Diseño exclusivo orientado a conversión</li>
+                            <li><i class="fas fa-check-circle"></i> Múltiples pasarelas de pago integradas</li>
+                            <li><i class="fas fa-check-circle"></i> Sistema de cupones y descuentos</li>
+                            <li><i class="fas fa-check-circle"></i> Gestión avanzada de inventario</li>
+                            <li><i class="fas fa-check-circle"></i> Panel administrativo completo</li>
+                            <li><i class="fas fa-check-circle"></i> Seguimiento de pedidos en tiempo real</li>
+                            <li><i class="fas fa-check-circle"></i> Optimización para motores de búsqueda</li>
+                        </ul>
+                        <div class="insight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Potencia tus ventas: La solución perfecta para negocios que buscan escalar sus operaciones online con total control.</p>
+                        </div>
+                    </div>
+                    <button class="btn-catalog shine-effect" data-package="E-commerce Professional">Solicitar</button>
+                </div>
+
+                <!-- Elemento 6 -->
+                <div class="catalog-item">
+                    <div class="catalog-header">
+                        <div class="catalog-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Aplicación Web Moderna</h3>
+                        <div class="price-tag">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">2.800.000</span>
+                            <span class="price-period">COP</span>
+                        </div>
+                    </div>
+                    <div class="catalog-description">
+                        <p class="tech-info">Desarrollado con React.js/Vue.js + Laravel/Node.js</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Frontend con tecnología JavaScript moderna</li>
+                            <li><i class="fas fa-check-circle"></i> Backend API RESTful</li>
+                            <li><i class="fas fa-check-circle"></i> Experiencia de usuario de alta gama</li>
+                            <li><i class="fas fa-check-circle"></i> Funcionamiento tipo SPA (Single Page Application)</li>
+                            <li><i class="fas fa-check-circle"></i> Base de datos optimizada</li>
+                            <li><i class="fas fa-check-circle"></i> Sistema de usuarios y permisos</li>
+                            <li><i class="fas fa-check-circle"></i> Hosting de alto rendimiento por 1 año</li>
+                            <li><i class="fas fa-check-circle"></i> Soporte técnico premium por 3 meses</li>
+                        </ul>
+                        <div class="insight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Funcionalidad avanzada: Perfecta para proyectos que requieren interactividad en tiempo real y máximo rendimiento.</p>
+                        </div>
+                    </div>
+                    <button class="btn-catalog shine-effect" data-package="Aplicación Web Moderna">Solicitar</button>
+                </div>
+
+                <!-- Elemento 7 -->
+                <div class="catalog-item">
+                    <div class="catalog-header">
+                        <div class="catalog-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h3>Plataforma Empresarial .NET</h3>
+                        <div class="price-tag">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">3.800.000</span>
+                            <span class="price-period">COP</span>
+                        </div>
+                    </div>
+                    <div class="catalog-description">
+                        <p class="tech-info">Desarrollado con ASP.NET Core, C# y SQL Server</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Arquitectura MVC robusta y escalable</li>
+                            <li><i class="fas fa-check-circle"></i> Backend potente con tecnología Microsoft</li>
+                            <li><i class="fas fa-check-circle"></i> Frontend responsive con Razor o Blazor</li>
+                            <li><i class="fas fa-check-circle"></i> Seguridad empresarial de alto nivel</li>
+                            <li><i class="fas fa-check-circle"></i> Integración con Azure y servicios Microsoft</li>
+                            <li><i class="fas fa-check-circle"></i> Gestión de roles y permisos avanzada</li>
+                            <li><i class="fas fa-check-circle"></i> Módulos personalizados para tu negocio</li>
+                            <li><i class="fas fa-check-circle"></i> Soporte técnico por 3 meses</li>
+                        </ul>
+                        <div class="insight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Solución empresarial robusta: Ideal para empresas que necesitan estabilidad, seguridad y escalabilidad con tecnología Microsoft.</p>
+                        </div>
+                    </div>
+                    <button class="btn-catalog shine-effect" data-package="Plataforma Empresarial .NET">Solicitar</button>
+                </div>
+
+                <!-- Elemento 8 -->
+                <div class="catalog-item spotlight">
+                    <div class="ribbon">Recomendado</div>
+                    <div class="catalog-header">
+                        <div class="catalog-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Plataforma Empresarial Integral</h3>
+                        <div class="price-tag">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">4.200.000</span>
+                            <span class="price-period">COP</span>
+                        </div>
+                    </div>
+                    <div class="catalog-description">
+                        <p class="tech-info">Desarrollado con Laravel + Vue.js/React.js + MySQL</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Sistema completo a medida</li>
+                            <li><i class="fas fa-check-circle"></i> Módulos personalizados según necesidades</li>
+                            <li><i class="fas fa-check-circle"></i> Dashboard analítico en tiempo real</li>
+                            <li><i class="fas fa-check-circle"></i> Integraciones con sistemas externos</li>
+                            <li><i class="fas fa-check-circle"></i> Acceso desde múltiples dispositivos</li>
+                            <li><i class="fas fa-check-circle"></i> Gestión documental</li>
+                            <li><i class="fas fa-check-circle"></i> Flujos de trabajo automatizados</li>
+                            <li><i class="fas fa-check-circle"></i> Seguridad de nivel bancario</li>
+                        </ul>
+                        <div class="insight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Automatiza tu empresa: Digitaliza y optimiza todos tus procesos empresariales en una única plataforma personalizada.</p>
+                        </div>
+                    </div>
+                    <button class="btn-catalog shine-effect" data-package="Plataforma Empresarial Integral">Solicitar</button>
+                </div>
+
+                <!-- Elemento 9 -->
+                <div class="catalog-item">
+                    <div class="catalog-header">
+                        <div class="catalog-icon">
+                            <i class="fas fa-laptop-house"></i>
+                        </div>
+                        <h3>Sistema Corporativo .NET Enterprise</h3>
+                        <div class="price-tag">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">5.500.000</span>
+                            <span class="price-period">COP</span>
+                        </div>
+                    </div>
+                    <div class="catalog-description">
+                        <p class="tech-info">Desarrollado con ASP.NET Core, C#, SQL Server y React/Angular</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Arquitectura empresarial en capas</li>
+                            <li><i class="fas fa-check-circle"></i> Frontend SPA con React o Angular</li>
+                            <li><i class="fas fa-check-circle"></i> APIs RESTful con ASP.NET Core</li>
+                            <li><i class="fas fa-check-circle"></i> Microservicios escalables</li>
+                            <li><i class="fas fa-check-circle"></i> Integración con Active Directory/Azure AD</li>
+                            <li><i class="fas fa-check-circle"></i> Reportes avanzados y Business Intelligence</li>
+                            <li><i class="fas fa-check-circle"></i> Implementación en servidores Windows o Azure</li>
+                            <li><i class="fas fa-check-circle"></i> Testing completo y documentación</li>
+                            <li><i class="fas fa-check-circle"></i> Capacitación para equipos IT</li>
+                        </ul>
+                        <div class="insight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Máximo rendimiento empresarial: La elección definitiva para corporaciones que requieren soluciones de clase empresarial con ecosistema Microsoft.</p>
+                        </div>
+                    </div>
+                    <button class="btn-catalog shine-effect" data-package="Sistema Corporativo .NET Enterprise">Solicitar</button>
+                </div>
+
+                <!-- Elemento 10 -->
+                <div class="catalog-item">
+                    <div class="catalog-header">
+                        <div class="catalog-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Solución Enterprise Full-Stack</h3>
+                        <div class="price-tag">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">6.200.000</span>
+                            <span class="price-period">COP</span>
+                        </div>
+                    </div>
+                    <div class="catalog-description">
+                        <p class="tech-info">Desarrollado con React.js/TypeScript + Node.js/PHP/C# + MySQL/MongoDB/SQL Server</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Arquitectura escalable de microservicios</li>
+                            <li><i class="fas fa-check-circle"></i> Frontend en React.js con TypeScript</li>
+                            <li><i class="fas fa-check-circle"></i> Backend en tecnología adaptada a necesidades</li>
+                            <li><i class="fas fa-check-circle"></i> Base de datos relacional y NoSQL según necesidades</li>
+                            <li><i class="fas fa-check-circle"></i> Integraciones con ERPs y CRMs</li>
+                            <li><i class="fas fa-check-circle"></i> Implementación en servidores dedicados o cloud</li>
+                            <li><i class="fas fa-check-circle"></i> Testing automatizado y CI/CD</li>
+                            <li><i class="fas fa-check-circle"></i> Documentación técnica completa</li>
+                            <li><i class="fas fa-check-circle"></i> Capacitación intensiva para equipos</li>
+                        </ul>
+                        <div class="insight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>Solución definitiva: Para grandes empresas que necesitan sistemas robustos, seguros y altamente escalables.</p>
+                        </div>
+                    </div>
+                    <button class="btn-catalog shine-effect" data-package="Solución Enterprise Full-Stack">Solicitar</button>
+                </div>
+
+                <!-- Elemento 11 -->
+                <div class="catalog-item premium">
+                    <div class="ribbon-premium"><i class="fas fa-crown"></i> Premium</div>
+                    <div class="catalog-header">
+                        <div class="catalog-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Desarrollo Extremadamente Personalizado</h3>
+                        <div class="price-tag">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">7.800.000</span>
+                            <span class="price-period">COP</span>
+                        </div>
+                    </div>
+                    <div class="catalog-description">
+                        <p class="tech-info">Tecnología full-stack completamente a medida</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Reuniones de conceptualización ilimitadas</li>
+                            <li><i class="fas fa-check-circle"></i> UI/UX Premium centrada en la experiencia de usuario</li>
+                            <li><i class="fas fa-check-circle"></i> Arquitectura de software exclusiva según el negocio</li>
+                            <li><i class="fas fa-check-circle"></i> Integraciones específicas (APIs, CRMs, ERPs, pasarelas complejas)</li>
+                            <li><i class="fas fa-check-circle"></i> Backend y frontend 100% personalizados</li>
+                            <li><i class="fas fa-check-circle"></i> Diseño visual único y altamente detallado</li>
+                            <li><i class="fas fa-check-circle"></i> Hosting dedicado de alto rendimiento incluido por 1 año</li>
+                            <li><i class="fas fa-check-circle"></i> Testing funcional completo y seguridad reforzada</li>
+                            <li><i class="fas fa-check-circle"></i> Dashboard y paneles según el flujo interno del negocio</li>
+                            <li><i class="fas fa-check-circle"></i> Capacitación extendida y soporte premium</li>
+                        </ul>
+                        <div class="insight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p>La solución definitiva: Desarrollo absolutamente a medida para proyectos que exigen la máxima calidad y atención al detalle.</p>
+                        </div>
+                    </div>
+                    <button class="btn-catalog shine-effect" data-package="Desarrollo Extremadamente Personalizado">Solicitar</button>
+                </div>
+            </div>
+
+          <!-- Servicios adicionales -->
+<div class="additional-services">
+    <h3 class="glow-text">Servicios Adicionales</h3>
+    <div class="services-grid">
+        <div class="additional-service-item">
+            <div class="service-name"><i class="fas fa-tools"></i> Mantenimiento mensual básico</div>
+            <div class="service-price">$150.000 COP</div>
+        </div>
+        <div class="additional-service-item">
+            <div class="service-name"><i class="fas fa-shield-alt"></i> Mantenimiento mensual premium</div>
+            <div class="service-price">$300.000 COP</div>
+        </div>
+        <div class="additional-service-item">
+            <div class="service-name"><i class="fas fa-server"></i> Renovación hosting y dominio (Paquetes 1,2,3)</div>
+            <div class="service-price">$150.000 COP/año</div>
+        </div>
+        <div class="additional-service-item">
+            <div class="service-name"><i class="fas fa-server"></i> Renovación hosting y dominio (Paquetes 4,5,6)</div>
+            <div class="service-price">$250.000 COP/año</div>
+        </div>
+        <div class="additional-service-item">
+            <div class="service-name"><i class="fas fa-server"></i> Renovación hosting y dominio (Paquetes 7,8,9,10,11)</div>
+            <div class="service-price">$400.000 COP/año</div>
+        </div>
+        <div class="additional-service-item">
+            <div class="service-name"><i class="fas fa-credit-card"></i> Integración pasarela de pagos adicional</div>
+            <div class="service-price">$350.000 COP</div>
+        </div>
+        <div class="additional-service-item">
+            <div class="service-name"><i class="fas fa-search"></i> Optimización SEO avanzada</div>
+            <div class="service-price">$400.000 COP</div>
+        </div>
+        <div class="additional-service-item">
+            <div class="service-name"><i class="fab fa-google"></i> Campaña Google Ads inicial</div>
+            <div class="service-price">$450.000 COP</div>
+        </div>
+        <div class="additional-service-item">
+            <div class="service-name"><i class="fas fa-chalkboard-teacher"></i> Capacitación personalizada (4 horas)</div>
+            <div class="service-price">$300.000 COP</div>
+        </div>
+        <div class="additional-service-item">
+            <div class="service-name"><i class="fas fa-comments"></i> Implementación de chat en vivo</div>
+            <div class="service-price">$200.000 COP</div>
+        </div>
+    </div>
+</div>
+
+<!-- Garantía -->
+<div class="guarantee-section">
+    <h3 class="glow-text">Garantía</h3>
+    <div class="guarantee-content">
+        <ul class="guarantee-list">
+            <li><i class="fas fa-check-circle"></i> Pago por etapas: 50% inicio, 50% entrega</li>
+            <li><i class="fas fa-check-circle"></i> Entregas según cronograma acordado</li>
+            <li><i class="fas fa-check-circle"></i> Correcciones ilimitadas durante el desarrollo</li>
+            <li><i class="fas fa-check-circle"></i> Todos los proyectos incluyen 1 mes de soporte gratuito</li>
+        </ul>
+    </div>
+</div>
+
+
+<section id="contacto" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2>Contáctanos</h2>
+            <p>Estamos listos para ayudarte con tu próximo proyecto</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@devnix.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>+57 322 853 1047</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Ubicación</h3>
+                    <p>Colombia</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>DEV<span>NIX</span></h2>
+                <p>Soluciones de programación profesionales</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="contacto" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contáctanos</h2>
-                <p>Estamos listos para ayudarte con tu próximo proyecto</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>info@devnix.com</p>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fab fa-whatsapp"></i>
-                        <h3>WhatsApp</h3>
-                        <p>+57 322 853 1047</p>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Ubicación</h3>
-                        <p>Colombia</p>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
-                    </form>
-                </div>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DEVNIX. Todos los derechos reservados.</p>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>DEV<span>NIX</span></h2>
-                    <p>Soluciones de programación profesionales</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Enlaces Rápidos</h3>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#catalogo">Catálogo</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Síguenos</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 DEVNIX. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
